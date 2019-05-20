@@ -105,7 +105,7 @@ function game(){
 		intro.classList.remove('fadeout');
 		intro.classList.remove('fadein');
 		if(psc>csc){
-			document.querySelector('#win').textContent="PLayer Wins";	
+			document.querySelector('#win').textContent="Player Wins";	
 		}
 		else if(psc==csc)
 		{
