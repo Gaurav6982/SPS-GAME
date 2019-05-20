@@ -22,6 +22,16 @@ function game(){
 
 		});
 		aplay.classList.add('rotate');
+
+
+		aplay.addEventListener('animationend',function(){
+			this.style.animation='';
+			
+		});
+		acomp.addEventListener('animationend',function(){
+					this.style.animation='';
+
+				});
 		stone.addEventListener('click',function(){
 			aplay.classList.add('rotate');
 			acomp.classList.remove('rotate');
@@ -39,10 +49,16 @@ function game(){
 				win.textContent="Player Wins!";
 				psc++;
 			}
+			aplay.style.animation="playershake 1s ease";
+			acomp.style.animation="compshake 1s ease";
+			setTimeout(function(){
 
-			aplay.src="media/img/rock.png";
+				aplay.src="media/img/rock.png";
 			acomp.src="media/img/"+computer+".png";
-			updatescore();		
+			updatescore();	
+
+			},1200);
+				
 		});
 
 		paper.addEventListener('click',function(){
@@ -54,7 +70,7 @@ function game(){
 				win.textContent="Its a Tie!";
 			}
 			else if (computer==='rock') {
-				win.textContent="Computer Wins!";
+				win.textContent="Player Wins!";
 				csc++;
 			}
 			else{
@@ -62,10 +78,15 @@ function game(){
 				win.textContent="Computer Wins!";
 				csc++;
 			}
+			aplay.style.animation="playershake 1s ease";
+			acomp.style.animation="compshake 1s ease";
+			setTimeout(function(){
 
-			aplay.src="media/img/paper.png";
+				aplay.src="media/img/paper.png";
 			acomp.src="media/img/"+computer+".png";
 			updatescore();
+			
+			},1200);
 			
 		});
 		
@@ -78,8 +99,7 @@ function game(){
 			computer=comp[no];
 			
 
-			aplay.src="media/img/scissor.png";
-			acomp.src="media/img/"+computer+".png";
+			
 
 
 			if(computer==='paper'){
@@ -95,9 +115,18 @@ function game(){
 				csc++;
 				
 			}
+			aplay.style.animation="playershake 1s ease";
+			acomp.style.animation="compshake 1s ease";
 
+			setTimeout(function(){
+
+				aplay.src="media/img/scissor.png";
+			acomp.src="media/img/"+computer+".png";
 			
 			updatescore();
+			
+			},1200);
+			
 		});
 		
 	document.querySelector('#end').addEventListener('click',function(){
@@ -123,6 +152,7 @@ function game(){
 			match.classList.remove('delay');
 			intro.classList.add('delay1');
 	});		
+
 
 };
 
