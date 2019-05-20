@@ -53,12 +53,18 @@ function game(){
 			acomp.style.animation="compshake 1s ease";
 			setTimeout(function(){
 
+<<<<<<< HEAD
 				aplay.src="media/img/rock.png";
 			acomp.src="media/img/"+computer+".png";
 			updatescore();	
 
 			},1200);
 				
+=======
+			aplay.src="MEDIA/img/rock.png";
+			acomp.src="MEDIA/img/"+computer+".png";
+			updatescore();		
+>>>>>>> 8504c9228e190aead6810dac96388aa0833ab0c3
 		});
 
 		paper.addEventListener('click',function(){
@@ -82,8 +88,13 @@ function game(){
 			acomp.style.animation="compshake 1s ease";
 			setTimeout(function(){
 
+<<<<<<< HEAD
 				aplay.src="media/img/paper.png";
 			acomp.src="media/img/"+computer+".png";
+=======
+			aplay.src="MEDIA/img/paper.png";
+			acomp.src="MEDIA/img/"+computer+".png";
+>>>>>>> 8504c9228e190aead6810dac96388aa0833ab0c3
 			updatescore();
 			
 			},1200);
@@ -99,7 +110,12 @@ function game(){
 			computer=comp[no];
 			
 
+<<<<<<< HEAD
 			
+=======
+			aplay.src="MEDIA/img/scissor.png";
+			acomp.src="MEDIA/img/"+computer+".png";
+>>>>>>> 8504c9228e190aead6810dac96388aa0833ab0c3
 
 
 			if(computer==='paper'){
@@ -134,7 +150,7 @@ function game(){
 		intro.classList.remove('fadeout');
 		intro.classList.remove('fadein');
 		if(psc>csc){
-			document.querySelector('#win').textContent="PLayer Wins";	
+			document.querySelector('#win').textContent="Player Wins";	
 		}
 		else if(psc==csc)
 		{
@@ -146,8 +162,8 @@ function game(){
 		psc=0;csc=0;
 			updatescore();
 			document.querySelector('#play').textContent="Play Again??";
-			aplay.src="media/img/rock.png";
-			acomp.src="media/img/rock.png";
+			aplay.src="MEDIA/img/rock.png";
+			acomp.src="MEDIA/img/rock.png";
 			win.textContent="Choose a Option";
 			match.classList.remove('delay');
 			intro.classList.add('delay1');
