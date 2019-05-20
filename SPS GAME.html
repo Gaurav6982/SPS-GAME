@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		SPS Game.
+	</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+	<div>
+		<div class="score">
+			<div id="player-score">
+				<div>Player</div>
+				<div id="pscore">0</div>
+			</div>
+			<div id="computer-score">
+				<div>Computer</div>
+				<div id="cscore">0</div>
+			</div>
+		</div>
+		<div class="intro">
+			<h3 id="win">STONE PAPERS SCISSORS.</h3>
+			<button id="play">LETS PLAY</button>
+		</div>
+		<div class="match fadeout">
+			<h1 class="winner">CHOOSE A OPTION</h1>
+			<div class="hands">
+				<div id="player"><img src="media/img/rock.png" id="aplay"></div>
+				
+				<div id="computer"><img src="media/img/rock.png" id="acomp"></div>
+			</div>
+			<div class="option">
+				<button id="stone">STONE</button>
+				<button id="paper">PAPER</button>
+				<button id="scissor">SCISSOR</button>
+			</div>
+			<div class="finish">
+				<button id="end">ENDGAME</button>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="JS/app.js"></script>
+</body>
+</html>
