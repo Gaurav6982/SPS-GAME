@@ -40,8 +40,8 @@ function game(){
 				psc++;
 			}
 
-			aplay.src="media/img/rock.png";
-			acomp.src="media/img/"+computer+".png";
+			aplay.src="MEDIA/img/rock.png";
+			acomp.src="MEDIA/img/"+computer+".png";
 			updatescore();		
 		});
 
@@ -63,8 +63,8 @@ function game(){
 				csc++;
 			}
 
-			aplay.src="media/img/paper.png";
-			acomp.src="media/img/"+computer+".png";
+			aplay.src="MEDIA/img/paper.png";
+			acomp.src="MEDIA/img/"+computer+".png";
 			updatescore();
 			
 		});
@@ -78,8 +78,8 @@ function game(){
 			computer=comp[no];
 			
 
-			aplay.src="media/img/scissor.png";
-			acomp.src="media/img/"+computer+".png";
+			aplay.src="MEDIA/img/scissor.png";
+			acomp.src="MEDIA/img/"+computer+".png";
 
 
 			if(computer==='paper'){
@@ -117,8 +117,8 @@ function game(){
 		psc=0;csc=0;
 			updatescore();
 			document.querySelector('#play').textContent="Play Again??";
-			aplay.src="media/img/rock.png";
-			acomp.src="media/img/rock.png";
+			aplay.src="MEDIA/img/rock.png";
+			acomp.src="MEDIA/img/rock.png";
 			win.textContent="Choose a Option";
 			match.classList.remove('delay');
 			intro.classList.add('delay1');
